@@ -1,0 +1,12 @@
+{
+  "name": "invitacion-boda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Invitacion de boda estatica con generador de QR",
+  "scripts": {
+    "qr": "node tools/generate-qr.js"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

@@ -1,0 +1,165 @@
+:root {
+  --color-bg: #faf6f0;
+  --color-text: #3a332c;
+  --color-accent: #a9825a;
+  --color-line: #dcd0c0;
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.names {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+
+.date {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.time {
+  font-size: 0.95rem;
+  color: var(--color-accent);
+  margin-top: 0.25rem;
+}
+
+.section {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.venue-name {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.venue-address {
+  color: #6b6258;
+  margin-top: 0;
+}
+
+.map-embed {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.maps-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.maps-button:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.schedule li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--color-line);
+}
+
+.schedule li:last-child {
+  border-bottom: none;
+}
+
+.schedule-time {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.dress-code h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+#music-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-accent);
+  background: var(--color-bg);
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#music-toggle.playing {
+  background: var(--color-accent);
+  color: #fff;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nombre 1] &amp; [Nombre 2] - Nuestra Boda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Botón de música -->
+  <audio id="bg-music" loop autoplay preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" aria-label="Reproducir música" title="Reproducir música">
+    <span id="music-icon">&#9835;</span>
+  </button>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="eyebrow">¡Nos casamos!</p>
+    <h1 class="names">[Nombre 1] &amp; [Nombre 2]</h1>
+    <p class="date">[Día de la semana], [DD de Mes de AAAA]</p>
+    <p class="time">[HH:MM h]</p>
+  </section>
+
+  <!-- Lugar -->
+  <section class="section" id="lugar">
+    <h2>Lugar</h2>
+    <p class="venue-name">[Nombre del lugar]</p>
+    <p class="venue-address">[Dirección completa del lugar]</p>
+
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=[Dirección+completa+del+lugar]&output=embed"
+        width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <a class="maps-button" href="https://www.google.com/maps/search/?api=1&query=[Dirección+completa+del+lugar]" target="_blank" rel="noopener">
+      Cómo llegar
+    </a>
+  </section>
+
+  <!-- Detalles -->
+  <section class="section" id="detalles">
+    <h2>Detalles del día</h2>
+    <ul class="schedule">
+      <li><span class="schedule-time">[HH:MM h]</span> Ceremonia</li>
+      <li><span class="schedule-time">[HH:MM h]</span> Cóctel</li>
+      <li><span class="schedule-time">[HH:MM h]</span> Banquete</li>
+      <li><span class="schedule-time">[HH:MM h]</span> Fiesta</li>
+    </ul>
+
+    <div class="dress-code">
+      <h3>Código de vestimenta</h3>
+      <p>[Ej. Etiqueta / Cóctel / Informal elegante]</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Con cariño, [Nombre 1] &amp; [Nombre 2]</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
