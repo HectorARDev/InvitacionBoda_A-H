@@ -22,7 +22,10 @@ body {
 
 .bg-frame {
   position: fixed;
-  inset: 1rem;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 0 1px var(--color-line);
   background:
@@ -101,6 +104,11 @@ body {
   margin: 1.5rem 0;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.map-embed iframe {
+  display: block;
+  border-radius: 8px;
 }
 
 .maps-button {
